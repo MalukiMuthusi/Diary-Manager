@@ -10,4 +10,9 @@
         android:name="codes.malukimuthusi.diarymanager.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/welcome2Fragment"
+        android:name="codes.malukimuthusi.diarymanager.Welcome2Fragment"
+        android:label="fragment_welcome2"
+        tools:layout="@layout/fragment_welcome2" />
 </navigation>

@@ -1,10 +1,12 @@
 package codes.malukimuthusi.diarymanager
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import codes.malukimuthusi.diarymanager.databinding.FragmentWelcomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +36,13 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_welcome, container, false)
+        val binding = FragmentWelcomeBinding.inflate(inflater, container, false)
+
+        binding.button.setOnClickListener {
+            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToWelcome2Fragment())
+        }
+
+        return binding.root
     }
 
     companion object {

@@ -7,4 +7,9 @@
     <string name="welcome_text">Write your dreams and make it true</string>
     <string name="image_description">Image of the Company Logo.</string>
     <string name="welcome_button">LET\'S BEGIN</string>
+    <string name="page2_title"><![CDATA[MEMORIES & THOUGHTS]]></string>
+    <string name="page2_message">Store, explore and organize your daily thoughts, memories and plans</string>
+    <string name="next">NEXT</string>
+    <string name="page3_title"><![CDATA[Secure & Forever]]></string>
+    <string name="page3_message">Your entries and snaps are synced securely to all your devices.Your snaps are safe with us</string>
 </resources>

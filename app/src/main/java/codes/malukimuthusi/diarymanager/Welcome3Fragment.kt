@@ -5,8 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import codes.malukimuthusi.diarymanager.databinding.FragmentWelcome2Binding
+import codes.malukimuthusi.diarymanager.databinding.FragmentWelcome3Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Welcome2Fragment.newInstance] factory method to
+ * Use the [Welcome3Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Welcome2Fragment : Fragment() {
+class Welcome3Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,11 +35,7 @@ class Welcome2Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = FragmentWelcome2Binding.inflate(inflater, container, false)
-
-        binding.button3.setOnClickListener {
-            findNavController().navigate(Welcome2FragmentDirections.actionWelcome2FragmentToWelcome3Fragment())
-        }
+        val binding = FragmentWelcome3Binding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -52,12 +47,12 @@ class Welcome2Fragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Welcome2Fragment.
+         * @return A new instance of fragment Welcome3Fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Welcome2Fragment().apply {
+            Welcome3Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

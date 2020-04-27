@@ -9,10 +9,23 @@
         android:id="@+id/welcomeFragment"
         android:name="codes.malukimuthusi.diarymanager.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_welcome2Fragment"
+            app:destination="@id/welcome2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/welcome2Fragment"
         android:name="codes.malukimuthusi.diarymanager.Welcome2Fragment"
         android:label="fragment_welcome2"
-        tools:layout="@layout/fragment_welcome2" />
+        tools:layout="@layout/fragment_welcome2" >
+        <action
+            android:id="@+id/action_welcome2Fragment_to_welcome3Fragment"
+            app:destination="@id/welcome3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome3Fragment"
+        android:name="codes.malukimuthusi.diarymanager.Welcome3Fragment"
+        android:label="fragment_welcome3"
+        tools:layout="@layout/fragment_welcome3" />
 </navigation>

@@ -12,4 +12,7 @@
     <string name="next">NEXT</string>
     <string name="page3_title"><![CDATA[Secure & Forever]]></string>
     <string name="page3_message">Your entries and snaps are synced securely to all your devices.Your snaps are safe with us</string>
+    <string name="page4_title">PHOTO AND AUDIO SNAPS</string>
+    <string name="page5_message">Photo and Audio snaps make your memories more vivid. Capture your picture, audio and attach those to your snap</string>
+    <string name="con">CONTINUE</string>
 </resources>

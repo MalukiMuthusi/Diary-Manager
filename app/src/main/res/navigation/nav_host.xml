@@ -3,38 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_host"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="codes.malukimuthusi.diarymanager.WelcomeFragment"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        android:id="@+id/homeFragment"
+        android:name="codes.malukimuthusi.diarymanager.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_welcomeFragment_to_welcome2Fragment"
-            app:destination="@id/welcome2Fragment" />
+            android:id="@+id/action_homeFragment_to_newEntryFragment"
+            app:destination="@id/newEntryFragment" />
     </fragment>
     <fragment
-        android:id="@+id/welcome2Fragment"
-        android:name="codes.malukimuthusi.diarymanager.Welcome2Fragment"
-        android:label="fragment_welcome2"
-        tools:layout="@layout/fragment_welcome2" >
-        <action
-            android:id="@+id/action_welcome2Fragment_to_welcome3Fragment"
-            app:destination="@id/welcome3Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/welcome3Fragment"
-        android:name="codes.malukimuthusi.diarymanager.Welcome3Fragment"
-        android:label="fragment_welcome3"
-        tools:layout="@layout/fragment_welcome3" >
-        <action
-            android:id="@+id/action_welcome3Fragment_to_welcomeFragment4"
-            app:destination="@id/welcomeFragment4" />
-    </fragment>
-    <fragment
-        android:id="@+id/welcomeFragment4"
-        android:name="codes.malukimuthusi.diarymanager.WelcomeFragment4"
-        android:label="fragment_welcome4"
-        tools:layout="@layout/fragment_welcome4" />
+        android:id="@+id/newEntryFragment"
+        android:name="codes.malukimuthusi.diarymanager.NewEntryFragment"
+        android:label="fragment_new_entry"
+        tools:layout="@layout/fragment_new_entry" />
 </navigation>

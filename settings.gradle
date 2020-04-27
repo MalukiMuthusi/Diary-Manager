@@ -1,2 +1,3 @@
 rootProject.name='Diary Manager'
 include ':app'
+include ':login'
